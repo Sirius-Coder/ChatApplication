@@ -1,0 +1,51 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans+Condensed:wght@300&display=swap');
+.main-container{
+  height:500px;
+  width:800px;
+  background:#0a53bf;
+  border:3px solid black;
+  border-radius: 30px;
+margin: 100px 350px;
+}
+.upper-body{
+  display: grid;
+  grid-template-columns: 10% 75% 10%;
+  font-size: 15px;
+  font-family: 'Open Sans Condensed', sans-serif;
+text-align: center;
+
+}
+#leave{
+  height: 30px;
+  width: 100px;
+  font-family: "Roboto",serif;
+  margin-top: 20px;
+}
+.middle-body{
+  margin-top: 20px;
+  display: grid;
+  grid-template-columns: 25% 75%;
+  height:300px;
+  font-family: 'Open Sans Condensed',serif;
+}
+.menu
+{
+margin-left: 10px;
+text-align: center;
+}
+.message-box{
+  background: white;
+  border: 2px solid black;
+  border-radius: 20px;
+  margin-right: 10px;
+}
+.lower-body{
+  display: grid;
+  grid-template-columns: 88% 12%;
+  margin-top: 20px;
+}
+.message{
+  border: 2px solid black;
+  border-radius: 10px;
+  margin-right: 10px;
+}

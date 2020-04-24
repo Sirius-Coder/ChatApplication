@@ -2,9 +2,43 @@
 <html lang="en" dir="ltr">
   <head>
     <meta charset="utf-8">
+    <link rel="stylesheet" href="/styles/index.css">
+    <script src="jquery-3.4.1.min.js"></script>
     <title>Socket Chat</title>
   </head>
   <body>
-  <h1>Welcome to Chat Application</h1>
+<div class="main-container">
+  <img class="img" src="/photos/logo.png" alt="logo">
+  <p class="text">Username</p>
+  <input type="text" name="" placeholder="Enter Username">
+  <p class="text">Room</p>
+  <select class="room" name="">
+    <option value="Chemical">Chemical</option>
+      <option value="Petroleum">Petroleum</option>
+  </select>
+  <br>
+<a href="/chatroom"><button type="button" name="button">Join Chat</button></a>
+
+</div>
+<script type="text/javascript">
+$(document).ready(function(){
+  $(".input").focus(function(){
+    $(this).css({
+      "width":"300px",
+
+    })
+  })
+})
+</script>
+
+
+
+
+
+
+
+
+  <script src="/socket.io/socket.io.js">  </script>
+  <script src="js/main.js"></script>
   </body>
 </html>
