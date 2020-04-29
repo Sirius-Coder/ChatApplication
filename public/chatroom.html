@@ -4,6 +4,7 @@
     <meta charset="utf-8">
       <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link rel="stylesheet" href="/styles/chat.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 
     <title>ChatRoom</title>
   </head>
@@ -13,17 +14,17 @@
 
         <img src="/photos/logo.png" height="80px" width="80px"  alt="logo">
         <h1>RGIPT Chat Room</h1>
-        <button id="leave" type="button" name="button">Leave Room</button>
+      <a href="/">  <button id="leave" type="button" >Leave Room</button></a>
       </div>
       <div class="middle-body">
         <div class="menu" >
 
           <h2><i class="tiny material-icons">chat</i>Room Name</h2>
-          <h2>JavaScript</h2>
+          <h2 id="RoomName"></h2>
           <h2><i class="tiny material-icons">face</i>Users</h2>
-          <p>Brad</p>
-          <p>Michael</p>
-          <p>James</p>
+          <ul id="Users">
+
+          </ul>
         </div>
         <div class="message-box">
 
@@ -31,10 +32,16 @@
       </div>
       <div class="lower-body">
         <input type="text" class="message" placeholder="Enter Your Message">
-        <button type="button" name="button">Send <i class="tiny material-icons">send</i>
+        <button id="enter"type="button" name="button">Send <i class="tiny material-icons">send</i>
         </button>
       </div>
 
     </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/qs/6.9.3/qs.min.js"
+    integrity="sha256-lSPkSu/D04IeqWOhTgTf5tLzNFEc37oNE9ysGS9PdK4="
+    crossorigin="anonymous"></script>
+    <script src="/socket.io/socket.io.js">  </script>
+    <script src="js/main.js"></script>
+
   </body>
 </html>

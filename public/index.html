@@ -3,42 +3,43 @@
   <head>
     <meta charset="utf-8">
     <link rel="stylesheet" href="/styles/index.css">
-    <script src="jquery-3.4.1.min.js"></script>
+    <script
+  src="https://code.jquery.com/jquery-3.5.0.min.js"
+  integrity="sha256-xNzN2a4ltkB44Mc/Jz3pT4iU1cmeR0FkXs4pru/JxaQ="
+  crossorigin="anonymous"></script>
     <title>Socket Chat</title>
   </head>
   <body>
 <div class="main-container">
+  <form action="chatroom.html" >
+
+
   <img class="img" src="/photos/logo.png" alt="logo">
   <p class="text">Username</p>
-  <input type="text" name="" placeholder="Enter Username">
+  <input type="text" name="username" placeholder="Enter Username" required>
   <p class="text">Room</p>
-  <select class="room" name="">
+  <select class="room" name="room">
     <option value="Chemical">Chemical</option>
       <option value="Petroleum">Petroleum</option>
   </select>
   <br>
-<a href="/chatroom"><button type="button" name="button">Join Chat</button></a>
-
+<button type="submit" name="button" href="/chatroom">Join Chat</button>
+</form>
 </div>
 <script type="text/javascript">
 $(document).ready(function(){
-  $(".input").focus(function(){
+  $("input").focus(function(){
     $(this).css({
       "width":"300px",
-
+    })
+  })
+  $("input").blur(function(){
+    $(this).css({
+      "width":"200px",
     })
   })
 })
 </script>
 
-
-
-
-
-
-
-
-  <script src="/socket.io/socket.io.js">  </script>
-  <script src="js/main.js"></script>
   </body>
 </html>

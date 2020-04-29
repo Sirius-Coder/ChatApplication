@@ -38,6 +38,7 @@ text-align: center;
   border: 2px solid black;
   border-radius: 20px;
   margin-right: 10px;
+  overflow-y: scroll;
 }
 .lower-body{
   display: grid;
@@ -48,4 +49,11 @@ text-align: center;
   border: 2px solid black;
   border-radius: 10px;
   margin-right: 10px;
+}
+#ping{
+  border:1px solid black;
+  border-radius: 10px;
+  background: #ecfc03;
+  font-family: "Roboto",sans-serif;
+
 }
