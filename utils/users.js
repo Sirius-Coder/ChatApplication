@@ -17,9 +17,7 @@ if(index !== -1)
 }
 //Get Room users
 function getRoomUsers(room){
-  return users.filter(user=>{
-    user.room===room;
-  })
+  return users.filter(user=>user.room===room)
 }
 module.exports={
   userJoin,

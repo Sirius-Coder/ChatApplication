@@ -25,7 +25,7 @@ app.get('/chatroom',(req,res)=>{
     socket.broadcast.to(user.room).emit('message',formatMessage('chatbot',`${user.username} has joined the chat`))
   //Welcome the user
      socket.emit('message',formatMessage('chatbot',`Welcome to RGIPT ChatBot ${user.username}`));
-    console.log( getRoomUsers(user.room));
+  
 //Send the room and users to frontend
 io.to(user.room).emit('roomUsers',{
   room:user.room,

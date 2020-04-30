@@ -42,9 +42,10 @@ function outputRoomName(room){
   $("#RoomName").html(room);
 }
 function outputUsersName(users) {
-  for(user in users){
-    console.log(user.username);
-  }
+
+  users.map(user=>{
+  $("#Users").append(`<p>${user.username}</p>`)
+  })
 
 
 }
